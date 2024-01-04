@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 2rem 9%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+header .nav a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .nav a:hover {
+    transition: all 0.2s;
+    color: pink;
+}
+
+header .icones svg {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+header .icones svg:hover {
+    transition: all 0.2s;
+    color: pink;
+}
+
+header #toggler {
+    display: none;
+}
+
+.toggler svg {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .toggler svg {
+        display: block;
+    }
+
+    header .nav {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    header .nav a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #fff;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
