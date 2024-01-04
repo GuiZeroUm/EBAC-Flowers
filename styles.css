@@ -11,6 +11,26 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.botao:hover {
+    transition: all 0.2s;
+    background-color: rgb(216, 108, 126);
+}
+
 header {
     display: flex;
     position: fixed;
@@ -31,6 +51,11 @@ header .logo {
     font-weight: bold;
 }
 
+header .logo:hover {
+    transition: all 0.2s;
+    color: rgb(216, 108, 126);
+}
+
 header .nav a {
     font-size: 2rem;
     padding: 0 1.5rem;
@@ -39,7 +64,7 @@ header .nav a {
 
 header .nav a:hover {
     transition: all 0.2s;
-    color: pink;
+    color: rgb(216, 108, 126);
 }
 
 header .icones svg {
@@ -51,7 +76,7 @@ header .icones svg {
 
 header .icones svg:hover {
     transition: all 0.2s;
-    color: pink;
+    color: rgb(216, 108, 126);
 }
 
 header #toggler {
@@ -66,9 +91,53 @@ header #toggler {
     display: none;
 }
 
+.inicio {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./imagens/home-flower.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .content {
+    max-width: 50rem;
+}
+
+.inicio .content h3 {
+    font-size: 6rem;
+    color: #000;
+}
+
+.inicio .content span {
+    font-size: 3.5rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.inicio .content p {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
 @media screen and (max-width: 1023px) {
     html {
         font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
     }
 }
 
@@ -93,6 +162,14 @@ header #toggler {
         background-color: #fff;
         border: 0.1rem solid rgba(0, 0, 0, 0.1);
         display: block;
+    }
+
+    .inicio .content h3 {
+        font-size: 5rem;
+    }
+
+    .inicio .content span {
+        font-size: 2.5rem;
     }
 }
 
